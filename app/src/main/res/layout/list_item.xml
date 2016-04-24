@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/swipelayout"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView
+        android:id="@+id/right_wrapper"
+        android:layout_width="160dp"
+        android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:orientation="horizontal">
+        <TextView
+            android:id="@+id/right_search"
+            android:textColor="#fff"
+            android:text="Search"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:background="#4cd964"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/right_open"
+            android:text="Open"
+            android:background="#f7e79c"
+            android:gravity="center"
+            android:layout_weight="0.5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+<android.support.v7.widget.CardView
+    android:id="@+id/cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginBottom="2dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp"
+    card_view:cardCornerRadius="4dp"
+    android:elevation="1dp">
+
+    <LinearLayout
+        android:id="@+id/item_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/itemImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:textSize="50sp"
+        android:textColor="#4169E1"
+        android:layout_gravity="center_vertical|left"
+        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:orientation="vertical">
+    <TextView
+        android:id="@+id/itemTextView1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:padding="4dp"
+        android:text="123"
+        android:textSize="20sp"
+        style="@style/Base.TextAppearance.AppCompat.Body2" />
+    <TextView
+        android:id="@+id/itemTextView2"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:padding="4dp"
+        android:text="456"
+        android:textSize="10sp"
+        android:textAlignment="textEnd"
+        style="@style/Base.TextAppearance.AppCompat.Body2" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+</com.daimajia.swipe.SwipeLayout>
+
